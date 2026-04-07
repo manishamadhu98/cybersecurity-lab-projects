@@ -3,22 +3,31 @@
 ## Setup & Installation
 
 sudo apt update && sudo apt upgrade -y
+
 sudo apt install wireshark tcpdump snort -y
+
 sudo usermod -aG wireshark $USER
+
 newgrp wireshark
 
 ## Capture Traffic
 
 ip a
+
 tcpdump -D
+
 sudo tcpdump -i eth0 -w capture.pcap
+
 sudo tcpdump -i eth0 -w http_traffic.pcap port 80
+
 sudo tcpdump -i eth0 -c 100 -w sample.pcap
+
 tcpdump -r capture.pcap
 
 ## Wireshark
 
 wireshark &
+
 wireshark capture.pcap
 
 Filters:
