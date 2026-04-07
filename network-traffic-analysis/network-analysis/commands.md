@@ -39,8 +39,11 @@ dns
 ## Snort
 
 snort -V
+
 sudo snort -i eth0 -v
+
 sudo snort -i eth0 -l /var/log/snort/
+
 sudo snort -i eth0 -c /etc/snort/snort.conf -A console
 
 Custom Rule:
