@@ -2,11 +2,12 @@
 
 ## Objective
 
-Capture and analyze network traffic using cybersecurity tools.
+Identify network traffic patterns and detect suspicious activity.
 
-## Tools
+## Steps Covered
 
-* tcpdump
-* Wireshark
-* Snort
-* Python (Scapy)
+1. Setup & Installation
+2. Capture Traffic using tcpdump
+3. Analyze using Wireshark
+4. Intrusion Detection using Snort
+5. Python Traffic Analyzer
